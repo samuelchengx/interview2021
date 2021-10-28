@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // let p = new Promise((resolve, reject) => {
+        //     resolve('成功')
+        // }).then(res => {
+        //     return new Promise((resolve, reject) => {
+        //         reject('sam xx')
+        //     })
+        // }).then(res => {
+        //     console.log('--new--', res)
+        // }, reason =>{
+        //     console.log('--error--', reason)
+        // })
+        // let promise = new Promise((resolve, reject)=>{
+        //     resolve('success')
+        // })
+        // let p1 = promise.then(res => {
+        //     return p1
+        // })
+        // console.log('1', p1)
+
+        // let p = new Promise((resolve, reject)=>{
+        //     resolve(2)
+        // })
+        // Promise.resolve(p).then(res=> {
+        //     console.log(res)
+        // })
+        // Promise.reject(2).then(null, reason => {
+        //     console.log('reject', reason)
+        // })
+
+        let p1 = new Promise((resolve, reject)=>{
+            resolve(1)
+        })
+        let p2 = new Promise((resolve, reject)=>{
+            reject(2)
+        })
+        Promise.all([p1, p2]).then(res => {
+            console.log(res)
+        })
+    </script>
+</body>
+</html>

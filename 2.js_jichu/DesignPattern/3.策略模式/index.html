@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3.策略模式</title>
+</head>
+<body>
+    <form action="javascript:;" id="registerForm" method = "post">
+        <p>
+            <label>请输入用户名：</label>
+            <input type="text" name="userName"/>
+        </p>
+        <p>
+            <label>请输入密码：</label>
+            <input type="text" name="password"/>
+        </p>
+        <p>
+            <label>请输入手机号码：</label>
+            <input type="text" name="phoneNumber"/>
+        </p>
+        <button type="submit">提交</button>
+    </form>
+    <script>
+        let log = console.log
+        let strategys = {
+            isNotEmpty: function (value, errorMsg) {
+                if(value === '') {
+                    return errorMsg
+                }
+            },
+            minLength: function (value, length, errorMsg) {
+                if(value.length < length) {
+                    return errorMsg;
+                }
+            },
+            mobileFormat: function (value, errorMsg) {
+                if(!/^1[3|5|8][0-9]{9}$/.test(value)) {
+                    return errorMsg
+                }
+            }
+        }
+        window.onload = function () {
+            // 缺点 1、onsubmit判断太多 2、修改规则需要内部修改，违背开闭原则 3、复用性差
+            let registerForm = document.querySelector('#registerForm')
+            // registerForm.onsubmit = function () {
+            //     if(registerForm.userName.value === '') {
+            //         log('userName不能为空')
+            //         return
+            //     }
+            //     if(registerForm.password.value.length<6){
+            //         log('password不能少于6位数')
+            //         return
+            //     }
+            //     if(!/(^1[3|5|8][0-9]{9}$)/.test(registerForm.phoneNumber.value)) {
+            //         log("手机号码格式不正确");
+            //         return
+            //     }
+            //     console.log('---表单提交成功---')
+            // }
+            function Validator () {
+                this.cache = []
+            }
+            // Validator.prototype.add = function (dom, rule, errorMsg) {
+            //     let str = rule.split(':')
+            //     this.cache.push(function () {
+            //         let strategy = str.shift()
+            //         str.unshift(dom.value)
+            //         str.push(errorMsg)
+            //         return strategys[strategy].apply(dom, str)
+            //     })
+            // }
+            Validator.prototype.add = function (dom, rules){
+                let self = this
+                for (let i = 0, rule; rule = rules[i], i < rules.length; i++) {
+                    (function (rule){
+                        let str = rule.strategy.split(':')
+                        self.cache.push(function () {
+                            let strategy = str.shift()
+                            str.unshift(dom.value)
+                            str.push(rule.errorMsg)
+                            return strategys[strategy].apply(dom, str)
+                        })
+                    })(rule)
+                }
+            }
+            Validator.prototype.start = function () {
+                let Func
+                for(let i = 0; i < this.cache.length; i++){
+                    Func = this.cache[i]
+                    let msg = Func()
+                    if(msg) {
+                        return msg
+                    }
+                }
+            }
+
+            function validateFunc () {
+                let validator =  new Validator()
+                // 添加校验规则
+                validator.add(registerForm.userName, [
+                    {strategy: 'isNotEmpty', errorMsg: '用户名称不能为空'},
+                    {strategy: 'minLength:6', errorMsg: '用户名长度不能少于6位'}
+                ])
+                validator.add(registerForm.password, [{strategy: 'minLength:6', errorMsg: '密码长度不能少于6位'}])
+                validator.add(registerForm.phoneNumber, [{strategy: 'mobileFormat', errorMsg: '手机号码格式不正确'}])
+                let errorMsg = validator.start(); // 获得效验结果
+                return errorMsg; // 返回效验结果
+            }
+            // 策略模式
+            registerForm.onsubmit = function () {
+                let errorMsg = validateFunc()
+                if(errorMsg) {
+                    log(errorMsg)
+                    return false
+                } else {
+                    console.log('用户提交成功')
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- <script src="bind.js"></script>-->
+    <!-- <script src="apply&&call.js"></script>-->
+    <!-- <script src="_new.js"></script>-->
+<!--    <script src="2.js_jichu/LazyMan.js"></script>-->
+    <script>
+        function add() {
+            let _args = Array.prototype.slice.call(arguments)
+            let sum = function () {
+                _args.push(...arguments)
+                return sum
+            }
+            sum.toString = function () {
+                return _args.reduce(function(a, b) {
+                    return a + b
+                }, 0)
+            }
+            return sum
+        }
+        //当传入不同的任何格式参数都参与计算
+        let a = add(1,2,3)
+        let b = add(1)(2)(3)
+        console.log(a)
+        console.log(b)
+        console.log(a == 6)
+        console.log(b == 6)
+    </script>
+</head>
+<body></body>
+</html>

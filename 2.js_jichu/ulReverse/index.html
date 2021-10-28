@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul id="target">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+<script>
+    // window.onload = function () {
+    //
+    // }
+    let arr = [1, [2, [3, [4, null]]]]
+    function arrayQTReverse(arr) {
+        let path = []
+        while (arr) {
+            path.push(arr.shift())
+            arr = arr[0]
+        }
+        let real = [arr]
+        while (path.length) {
+            let t = []
+            t.unshift(path.shift(), real[0] ? real.slice() :null)
+            real = t
+        }
+    }
+    arrayQTReverse(arr)
+
+</script>
+</body>
+</html>

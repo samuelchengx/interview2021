@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设计模式-单例模式</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #f5f5f5;
+            overflow: hidden;
+        }
+        .login-btn {
+            width: 100px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            border-radius: 30px;
+            border: 4px solid #e5e5e5;
+            margin: 100px auto 0;
+            cursor: pointer;
+            font-size: 20px;
+            color: rgba(0, 0, 0, .5);
+        }
+        .login-wrapper {
+            width: 400px;
+            height: 200px;
+            padding-left: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            margin: 0 auto;
+        }
+        .login-title {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 10px 0 0;
+        }
+        .close-btn {
+            cursor: pointer;
+        }
+        .mask-layer {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding-top: 8%;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div id="login" class="login-btn">
+        登录
+    </div>
+</body>
+<script>
+    class Login{
+        constructor() {
+            this.init()
+        }
+        init() {
+            // 新创建div
+            let mask = document.createElement('div')
+            // 添加样式
+            mask.classList.add('mask-layer')
+            mask.innerHTML = `
+                <div class="login-wrapper">
+                    <div class="login-title">
+                        <div class="title-text">登录框</div>
+                        <div class="close-btn">×</div>
+                    </div>
+                </div>
+            `
+            //插入元素
+            document.body.insertBefore(mask, document.body.childNodes[0]);
+            //注册关闭登录框事件
+            Login.addCloseLoginEvent();
+        }
+        // 静态方法: 获取元素
+        static getLoginDom(cls) {
+            return document.querySelector(cls)
+        }
+        // 静态方法: 注册关闭登录框事件
+        static addCloseLoginEvent() {
+            this.getLoginDom('.close-btn').addEventListener('click', () => {
+                // 隐藏遮罩层
+                this.getLoginDom('.mask-layer').style = "display: none";
+            })
+        }
+        //静态方法: 获取实例(单例)
+        static getInstance() {
+            if(!this.instance) {
+                this.instance = new Login();
+            } else {
+                //移除遮罩层style, 用于显示遮罩层
+                this.getLoginDom('.mask-layer').removeAttribute('style');
+            }
+            return this.instance;
+        }
+    }
+
+    Login.getLoginDom('#login').addEventListener('click', function () {
+        Login.getInstance()
+    })
+</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function factory(role) {
+        if(this instanceof factory) {
+            let a = new this[role]
+            return a
+        } else  {
+            return new factory(role)
+        }
+    }
+    factory.prototype = {
+        'superAdmin': function (name) {
+            this.name = '超级管理员'
+            this.viewPage = ["首页","发现页","通讯录","应用数据","权限管理"]
+        },
+        'admin': function () {
+            this.name = '管理员'
+            this.viewPage = ["首页","发现页","通讯录","应用数据"]
+        },
+        'user': function () {
+            this.name = '普通用户'
+            this.viewPage=["首页","发现页","通讯录"]
+        }
+    }
+
+    let superAdmin = factory("superAdmin");
+
+</script>
+</body>
+</html>

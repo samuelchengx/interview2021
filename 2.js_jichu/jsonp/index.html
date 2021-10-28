@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="web.js"></script>
+</head>
+<body>
+
+</body>
+<script type="application/javascript">
+    // 创建一个callback
+    const creatCallbackName = function () {
+        return `callback${(Math.random()*1000000).toFixed(0)}`
+    }
+
+    // 创建一个script标签
+    const insertScript = function (url) {
+        let script = document.createElement('script')
+        script.onload = script.onerror = function () {
+            document.body.removeChild(script)
+        }
+        script.setAttribute('src', url)
+        document.body.appendChild(script)
+    }
+
+    // 拼接url参数
+    function setQuery(url, data) {
+        let keys = Object.keys(data)
+        if(keys.length === 0) {
+            return url
+        } else {
+            const pairs = keys.map(key => `${key}=${data[key]}`)
+            url = url.includes('?') ? url : `${url}?`
+            url += pairs.join('&')
+            return url
+        }
+    }
+
+    // jsonp请求函数
+    function jsonp(url, config = {}) {
+        let data = config.data || {}
+        let timeout = config.timeout || 5000
+        let timer
+        let funcName = creatCallbackName()
+        data.callback = funcName
+        return new Promise((resolve, reject)=>{
+            window[funcName] = function (res) {
+                if(timer){
+                    clearTimeout(timer)
+                }
+                delete window[funcName]
+                resolve(res)
+            }
+            url = setQuery(url, data)
+            setTimeout(()=>{
+                delete window[funcName]
+                reject(new Error(`fetch ${url} fail`))
+            }, timeout)
+            insertScript(url)
+        })
+    }
+    // 使用效果
+    jsonp('http://localhost:8000').then(res=>{
+        console.log(res)
+    }).catch(res => {
+        console.log(res)
+    })
+
+</script>
+</html>

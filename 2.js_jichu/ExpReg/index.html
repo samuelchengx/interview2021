@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /**
+         \d  数字
+         \D  除了数字
+         \w  字母 数字 下划线
+         \W  除了 字母 数字 下划线
+         \s  空白字符  换行 空格 制表符
+         \S  除了不可见任意字符
+         .   除了换行符
+         ^   开头
+         $   结尾
+         *   0个或多个
+         +   一个或多个
+         \s\S  \d\D  可匹配所有字符
+         \p{L} 匹配字符
+         \p{P} 匹配中文
+         ?:  不保留分组
+         exp1(?!xxx)     查找后面不是xxx的exp1
+         exp1(?=xxx)      查找xxx前面的exp1
+         (?<=xxx)exp1     查找xxx后面的exp1
+         (?<!xxx)exp1    查找前面不是xxx的exp1
+         */
+        /** 模式：
+         i 不区分大小写
+         s 单行
+         g 全部
+         */
+    </script>
+</head>
+<body>
+    <div class="highlight">
+        samuelcheng
+    </div>
+    <input type="text" name="user">
+<script>
+   window.onload = function () {
+       // 字符串的方法 replace substring substr slice
+       /**
+        * 感受正则的魅力
+        */
+       let str = 'samuel0807cheng1991'
+       let arr1 = [...str]
+       // let num = arr1.filter(item => {
+       //     return !Number.isNaN(parseInt(item))
+       // })
+       //console.log(num.join(''))
+       //console.log(str.match(/\d/g).join(''))
+       /**
+        * 用对象创建正则表达式
+        */
+       let str3 = '1991SamuelCheng@vipkid'
+       //console.log(/@/.test(str3))
+       let temp4 = 'eng'
+       let reg4 = eval(`/${temp4}/`), reg5 = new RegExp(eval(`/${temp4}/`), 'g')
+       //console.log(reg5, reg5.exec(str3).index)
+       // let com = prompt('请输入需要高亮的字符，支持正则')
+       // let div = document.querySelector('div')
+       // //console.log(com, div)
+       // let reg6 = new RegExp(com, 'g')
+       // div.innerHTML = div.innerHTML.replace(reg6, search => {
+       //     return `<b style="color:red">${search}</b>`
+       // })
+       /**
+        * 选择符的使用
+        */
+       let str7 = '123022-40866343'
+       let reg7 = /^(022|023)\-\d{8}$/
+       //console.log(reg7.test(str7))
+       /**
+        * 原子表与原子组中的选择符 [] ()
+        */
+       //console.log(('1233344445').match(/(12|45)/))
+       /**
+        * 转义需要好好理解
+        * . 为除换行外任何字符 .普通点
+        * \d 数字 0～9
+        */
+       let price = '237.714' // price要是为字符串都要能正确匹配
+       //console.log(/\d+\.\d+/.test(price))
+       // console.log('正则字符串', "\\d+\\.\\d+")
+       let reg8 = new RegExp("\^\\d+\\.\\d+$")
+       //console.log(reg8.test(price))
+       let url = "https://www.vipkid.com.cn"
+       let urlReg = /(https|http):\/\/\w+\.\w+\.\w+\.\w+/
+       //console.log(urlReg.test(url))
+       /**
+        * 字符边界约束
+        */
+       let strBound = '1qdadsad234'
+       let strBoundReg = /(^\d)\w+(\d$)/
+       //console.log(strBoundReg.test(strBound))
+       let ele = document.querySelector('[name="user"]')
+       ele.addEventListener('input', function () {
+           let flag = this.value.match(/^[a-z]{3,6}$/)
+           //console.log(flag ? 'success' : 'fail')
+       }, false)
+       /**
+        * 元字符
+        */
+       let yuanStr = 'samuel1991', yuanStrReg = /\d+/g
+       //console.log(yuanStr.match(yuanStrReg))
+       let yuanStrDemo = `
+       张三:010-77777777,李四:020-88888888
+         `
+       let yuanStrRegDemo = /\d{3}\-\d{8}/g
+       //console.log(yuanStrDemo.match(yuanStrRegDemo)) // => ["010-77777777", "020-88888888"]
+       // \d 数字 \D 除了数字
+       //console.log(yuanStr.match(/\D+/g)) // => ["samuel"]
+       //console.log(yuanStrDemo.match(/[^:\-\d,\s]+/g)) // => ["张三", "李四"]
+       // \s空白
+       //console.log('检测空白', yuanStrDemo.match(/\s/g))
+       // w 与 W元字符
+       // \w \d
+      // console.log('samuel1991'.match(/\d+/g))
+       // 点元字符使用
+       let strPoint = `
+           sam1991
+           gina1990
+           eason2021
+       `
+       let strPointReg = /.+/s
+       // console.log(strPoint.match(strPointReg)[0])
+       let phoneNum = '010 - 88888888', phoneNumReg = /^\d{3}\s-\s\d{8}$/g
+       // console.log(phoneNum.match(phoneNumReg))
+       /**
+        * 如何精巧匹配所有字符
+        * [\s\S] [\d\D] 匹配所有字符
+        *
+        */
+       let strAll = `
+        <span>
+            sam1991
+            eason2021
+        </span>
+       `
+       let strAllReg = /<span>[\s\S]+<\/span>/g, strAllRegOther = /<span>.+<\/span>/s
+       // console.log(strAll.match(strAllRegOther))
+       /**
+        * 模式修正符
+        * i 不区分大小写 g贪婪
+        */
+
+       /**
+        * m多行匹配修正符实现
+        * @type {string}
+        * return [{name: 'js', price: '200元'}]
+        */
+       let info =  `
+        #1 js, 200元 #
+        #2 php, 300元 #
+        #9 vipkid.com # samuel
+        #4 node.js, 180元 #
+       `
+        let infoReg = /\s*#\d+\s+(.+)\s+#/gs
+
+       console.log(info.match(infoReg)[0])
+   }
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手写promise</title>
+    <script src="myPromise.js"></script>
+</head>
+<body>
+    <script>
+        /**
+         * 1、声明promise类，并绑定this
+         * 2、状态保护，执行者错误捕获
+         * 3、then的基础构建
+         * 4、实现then的异步操作与异常捕获
+         * 5、promise的PENDDING状态处理
+         * 6、Pending异步处理技巧
+         * 7、then链式操作原理
+         * 8、新promise的then方法异常处理
+         * 9、实现then穿透
+         * 10、then返回promise处理
+         * 11、then代码冗余处理
+         * 12、promise返回类型的约束
+         * 13、实现resolve和reject
+         * 14、promise的all方法实现
+         * 15、promise的race静态方法实现
+         * 16、promise的allSettled方法实现
+         */
+        // let p = new MP((resolve, reject) => {
+        //    setTimeout(()=>{
+        //        resolve('success')
+        //    }, 2000)
+        // }).then(res => {
+        //     return new MP((resolve, reject) =>{
+        //         resolve('eason1')
+        //     })
+        // }, reason=>{
+        //     return new MP((resolve, reject) =>{
+        //         reject('eason2')
+        //     })
+        // }).then(res => {
+        //     console.log('fulfilled', res)
+        // }, reason => {
+        //     console.log('rejected', reason)
+        // })
+        // let promise = new MP((resolve, reject)=>{
+        //         resolve('success')
+        //     })
+        // let p1 = promise.then(res => {
+        //     return p1
+        // })
+        // console.log('1', p1)
+        // MP.resolve(2).then(res => {
+        //     console.log(res)
+        // })
+        // Promise.reject(2).then(null, reason => {
+        //     console.log('reject', reason)
+        // })
+
+        let p1 = new MP((resolve, reject)=>{
+                setTimeout(()=> {
+                    resolve(1)
+                }, 1000)
+            })
+        let p2 = new MP((resolve, reject)=>{
+            reject(new Error(2))
+        })
+        // MP.all([p1, p2]).then(res => {
+        //     console.log(res)
+        // }, reason =>{
+        //     console.log(reason)
+        // })
+
+        MP.race([p1, p2]).then(res => {
+            console.log(res)
+        }, reason =>{
+            console.log(reason)
+        })
+    </script>
+</body>
+</html>

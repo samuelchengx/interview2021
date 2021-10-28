@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="06d8afb2-c436-412e-8a49-8d52f7565fd5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/10.algorithm/5.twoSum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10.algorithm/6.isValid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10.algorithm/7.findInMountainArray.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.feQuestion100/1.key.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="package.json" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="ProjectId" id="1wWvnd7vQrSoqN2TcAszB5Tfuer" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.17.2" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.17.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/2.js_jichu/promise" />
+      <recent name="$PROJECT_DIR$/js_jichu" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/seajs" />
+      <recent name="$PROJECT_DIR$/niuke/mianjing" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.6.isValid.js">
+    <configuration name="2.maxCommonPrefix.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/10.algorithm/2.maxCommonPrefix.js" working-dir="$PROJECT_DIR$/10.algorithm">
+      <method v="2" />
+    </configuration>
+    <configuration name="3.minSubStr.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/10.algorithm/3.minSubStr.js" working-dir="$PROJECT_DIR$/10.algorithm">
+      <method v="2" />
+    </configuration>
+    <configuration name="4.climbStairs.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/10.algorithm/4.climbStairs.js" working-dir="$PROJECT_DIR$/10.algorithm">
+      <method v="2" />
+    </configuration>
+    <configuration name="5.twoSum.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/10.algorithm/5.twoSum.js" working-dir="$PROJECT_DIR$/10.algorithm">
+      <method v="2" />
+    </configuration>
+    <configuration name="6.isValid.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/10.algorithm/6.isValid.js" working-dir="$PROJECT_DIR$/10.algorithm">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.6.isValid.js" />
+        <item itemvalue="Node.js.5.twoSum.js" />
+        <item itemvalue="Node.js.4.climbStairs.js" />
+        <item itemvalue="Node.js.3.minSubStr.js" />
+        <item itemvalue="Node.js.2.maxCommonPrefix.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="06d8afb2-c436-412e-8a49-8d52f7565fd5" name="Default Changelist" comment="" />
+      <created>1628587327215</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628587327215</updated>
+      <workItem from="1628587328479" duration="44478000" />
+      <workItem from="1629456583995" duration="18588000" />
+      <workItem from="1629904205421" duration="69643000" />
+      <workItem from="1630928696162" duration="101000" />
+      <workItem from="1630928960436" duration="30775000" />
+      <workItem from="1631191962616" duration="38966000" />
+      <workItem from="1632296325563" duration="4995000" />
+      <workItem from="1632394897723" duration="6120000" />
+      <workItem from="1632626617647" duration="3591000" />
+      <workItem from="1633766118013" duration="8040000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1629099453121">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-280.-1080.1920.1080@0.0.1440.900" timestamp="1629099453121" />
+    <state width="1398" height="123" key="GridCell.Tab.0.bottom" timestamp="1634637028052">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="123" key="GridCell.Tab.0.bottom/0.0.1440.900/-280.-1080.1920.1080@0.0.1440.900" timestamp="1634637028052" />
+    <state width="1398" height="276" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1631327863815" />
+    <state width="1398" height="183" key="GridCell.Tab.0.bottom/0.23.1440.829/-280.-1057.1920.1057@0.23.1440.829" timestamp="1630928571010" />
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.23.1440.835/-280.-1057.1920.1057@0.23.1440.835" timestamp="1633689478040" />
+    <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.23.1440.837/-280.-1057.1920.1057@0.23.1440.837" timestamp="1633685908044" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.838/-280.-1057.1920.1057@0.23.1440.838" timestamp="1632476019085" />
+    <state width="1398" height="123" key="GridCell.Tab.0.center" timestamp="1634637028050">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="123" key="GridCell.Tab.0.center/0.0.1440.900/-280.-1080.1920.1080@0.0.1440.900" timestamp="1634637028050" />
+    <state width="1398" height="276" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1631327863814" />
+    <state width="1398" height="183" key="GridCell.Tab.0.center/0.23.1440.829/-280.-1057.1920.1057@0.23.1440.829" timestamp="1630928571009" />
+    <state width="1398" height="229" key="GridCell.Tab.0.center/0.23.1440.835/-280.-1057.1920.1057@0.23.1440.835" timestamp="1633689478038" />
+    <state width="1398" height="229" key="GridCell.Tab.0.center/0.23.1440.837/-280.-1057.1920.1057@0.23.1440.837" timestamp="1633685908029" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.838/-280.-1057.1920.1057@0.23.1440.838" timestamp="1632476019084" />
+    <state width="1398" height="123" key="GridCell.Tab.0.left" timestamp="1634637028049">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="123" key="GridCell.Tab.0.left/0.0.1440.900/-280.-1080.1920.1080@0.0.1440.900" timestamp="1634637028049" />
+    <state width="1398" height="276" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1631327863813" />
+    <state width="1398" height="183" key="GridCell.Tab.0.left/0.23.1440.829/-280.-1057.1920.1057@0.23.1440.829" timestamp="1630928571008" />
+    <state width="1398" height="229" key="GridCell.Tab.0.left/0.23.1440.835/-280.-1057.1920.1057@0.23.1440.835" timestamp="1633689478036" />
+    <state width="1398" height="229" key="GridCell.Tab.0.left/0.23.1440.837/-280.-1057.1920.1057@0.23.1440.837" timestamp="1633685907997" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.838/-280.-1057.1920.1057@0.23.1440.838" timestamp="1632476019083" />
+    <state width="1398" height="123" key="GridCell.Tab.0.right" timestamp="1634637028051">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="123" key="GridCell.Tab.0.right/0.0.1440.900/-280.-1080.1920.1080@0.0.1440.900" timestamp="1634637028051" />
+    <state width="1398" height="276" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1631327863814" />
+    <state width="1398" height="183" key="GridCell.Tab.0.right/0.23.1440.829/-280.-1057.1920.1057@0.23.1440.829" timestamp="1630928571010" />
+    <state width="1398" height="229" key="GridCell.Tab.0.right/0.23.1440.835/-280.-1057.1920.1057@0.23.1440.835" timestamp="1633689478039" />
+    <state width="1398" height="229" key="GridCell.Tab.0.right/0.23.1440.837/-280.-1057.1920.1057@0.23.1440.837" timestamp="1633685908036" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.838/-280.-1057.1920.1057@0.23.1440.838" timestamp="1632476019084" />
+    <state x="229" y="89" key="SettingsEditor" timestamp="1628849068975">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="89" key="SettingsEditor/0.0.1440.900/-280.-1080.1920.1080@0.0.1440.900" timestamp="1628849068975" />
+    <state x="421" y="205" width="598" height="490" key="find.popup" timestamp="1631778816572">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="421" y="205" width="598" height="490" key="find.popup/0.0.1440.900/-280.-1080.1920.1080@0.0.1440.900" timestamp="1631778816572" />
+    <state x="421" y="205" width="598" height="548" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1630809329800" />
+    <state x="385" y="210" key="run.anything.popup" timestamp="1630772213098">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1630772213098" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1629907077210">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1629907077210" />
+  </component>
+</project>
