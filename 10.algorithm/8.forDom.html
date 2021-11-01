@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h1>遍历 DOM 树</h1>
+    <p style="color: green;">Tip: 利用递归实现</p>
+    <div>
+        <ul>
+            <li>想要学好递归</li>
+            <li>记住一句话</li>
+            <li>自己调用自己</li>
+        </ul>
+        <div>
+            <div>
+                <span>一定要用中止递归的条件</span>
+            </div>
+        </div>
+    </div>
+    <div id="demo_node">
+        <ul>
+            <li>不然的话</li>
+        </ul>
+        <p>就会陷入</p>
+        <h2>死循环</h2>
+        <div>
+            <p>那么真的就是</p>
+            <h3>
+                <span>在写bug了</span>
+            </h3>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var root = document.documentElement;
+        // 获取根标签html
+        function forDom(root){
+            showNode(root);
+            // 这里输出的是根节点
+            var children = root.children;
+            // 获取根节点的两个子节点head和body
+            forChildren(children);
+            // 将这两个的子节点的下面的所有的节点通过递归找出来
+        }
+        // 获取子节点伪数组，交给下面遍历
+
+        function forChildren(children){
+            for(var i=0; i<children.length; i++){
+                var child = children[i];
+                showNode(child);
+                // 输出子节点名字
+
+                child.children && forDom(child);
+                // 判断child节点是否还有子节点，如果有继续执行遍历节点的操作，这也是递归的中止条件
+                // 这里用到递归
+            }
+        }
+        // 遍历上面获取到的节点组成的伪数组，并逐个判断是否还有子节点如果有再执行上面的函数，形成递归
+
+        function showNode(node){
+            console.log("节点：" + node.nodeName);
+        }
+
+        forDom(root);
+        // 从根节点开始遍历dom树
+
+    </script>
+</body>
+</html>

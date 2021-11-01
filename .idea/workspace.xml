@@ -11,10 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06d8afb2-c436-412e-8a49-8d52f7565fd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/10.algorithm/5.twoSum.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10.algorithm/6.isValid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10.algorithm/7.findInMountainArray.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.feQuestion100/1.key.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10.algorithm/8.forDom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.feQuestion100/0.Interator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.feQuestion100/4.setMapWeakSetWeakMap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.feQuestion100/5.DFSAndBFS.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2.js_jichu/super.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="package.json" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -64,29 +65,29 @@
       <recent name="$PROJECT_DIR$/niuke/mianjing" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.6.isValid.js">
-    <configuration name="2.maxCommonPrefix.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/10.algorithm/2.maxCommonPrefix.js" working-dir="$PROJECT_DIR$/10.algorithm">
+  <component name="RunManager" selected="Node.js.super.js">
+    <configuration name="5.DFSAndBFS.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/interview2021/12.feQuestion100/5.DFSAndBFS.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="3.minSubStr.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/10.algorithm/3.minSubStr.js" working-dir="$PROJECT_DIR$/10.algorithm">
+    <configuration name="8.forDom.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/interview2021/10.algorithm/8.forDom.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="4.climbStairs.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/10.algorithm/4.climbStairs.js" working-dir="$PROJECT_DIR$/10.algorithm">
+    <configuration name="0.Interator.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/12.feQuestion100/0.Interator.js" working-dir="$PROJECT_DIR$/12.feQuestion100">
       <method v="2" />
     </configuration>
-    <configuration name="5.twoSum.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/10.algorithm/5.twoSum.js" working-dir="$PROJECT_DIR$/10.algorithm">
+    <configuration name="4.setMapWeakSetWeakMap.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/12.feQuestion100/4.setMapWeakSetWeakMap.js" working-dir="$PROJECT_DIR$/12.feQuestion100">
       <method v="2" />
     </configuration>
-    <configuration name="6.isValid.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/10.algorithm/6.isValid.js" working-dir="$PROJECT_DIR$/10.algorithm">
+    <configuration name="super.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/2.js_jichu/super.js" working-dir="$PROJECT_DIR$/2.js_jichu">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.6.isValid.js" />
-        <item itemvalue="Node.js.5.twoSum.js" />
-        <item itemvalue="Node.js.4.climbStairs.js" />
-        <item itemvalue="Node.js.3.minSubStr.js" />
-        <item itemvalue="Node.js.2.maxCommonPrefix.js" />
+        <item itemvalue="Node.js.super.js" />
+        <item itemvalue="Node.js.0.Interator.js" />
+        <item itemvalue="JavaScript Debug.5.DFSAndBFS.html" />
+        <item itemvalue="Node.js.4.setMapWeakSetWeakMap.js" />
+        <item itemvalue="JavaScript Debug.8.forDom.html" />
       </list>
     </recent_temporary>
   </component>
@@ -108,6 +109,7 @@
       <workItem from="1632394897723" duration="6120000" />
       <workItem from="1632626617647" duration="3591000" />
       <workItem from="1633766118013" duration="8040000" />
+      <workItem from="1635402947240" duration="7715000" />
     </task>
     <servers />
   </component>
@@ -131,38 +133,38 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-280.-1080.1920.1080@0.0.1440.900" timestamp="1629099453121" />
-    <state width="1398" height="123" key="GridCell.Tab.0.bottom" timestamp="1634637028052">
+    <state width="1398" height="196" key="GridCell.Tab.0.bottom" timestamp="1635751917430">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="123" key="GridCell.Tab.0.bottom/0.0.1440.900/-280.-1080.1920.1080@0.0.1440.900" timestamp="1634637028052" />
-    <state width="1398" height="276" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1631327863815" />
+    <state width="1398" height="196" key="GridCell.Tab.0.bottom/0.0.1440.900/-280.-1080.1920.1080@0.0.1440.900" timestamp="1635751917430" />
+    <state width="1398" height="216" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1635581730079" />
     <state width="1398" height="183" key="GridCell.Tab.0.bottom/0.23.1440.829/-280.-1057.1920.1057@0.23.1440.829" timestamp="1630928571010" />
     <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.23.1440.835/-280.-1057.1920.1057@0.23.1440.835" timestamp="1633689478040" />
     <state width="1398" height="229" key="GridCell.Tab.0.bottom/0.23.1440.837/-280.-1057.1920.1057@0.23.1440.837" timestamp="1633685908044" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.838/-280.-1057.1920.1057@0.23.1440.838" timestamp="1632476019085" />
-    <state width="1398" height="123" key="GridCell.Tab.0.center" timestamp="1634637028050">
+    <state width="1398" height="196" key="GridCell.Tab.0.center" timestamp="1635751917428">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="123" key="GridCell.Tab.0.center/0.0.1440.900/-280.-1080.1920.1080@0.0.1440.900" timestamp="1634637028050" />
-    <state width="1398" height="276" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1631327863814" />
+    <state width="1398" height="196" key="GridCell.Tab.0.center/0.0.1440.900/-280.-1080.1920.1080@0.0.1440.900" timestamp="1635751917428" />
+    <state width="1398" height="216" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1635581730078" />
     <state width="1398" height="183" key="GridCell.Tab.0.center/0.23.1440.829/-280.-1057.1920.1057@0.23.1440.829" timestamp="1630928571009" />
     <state width="1398" height="229" key="GridCell.Tab.0.center/0.23.1440.835/-280.-1057.1920.1057@0.23.1440.835" timestamp="1633689478038" />
     <state width="1398" height="229" key="GridCell.Tab.0.center/0.23.1440.837/-280.-1057.1920.1057@0.23.1440.837" timestamp="1633685908029" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.838/-280.-1057.1920.1057@0.23.1440.838" timestamp="1632476019084" />
-    <state width="1398" height="123" key="GridCell.Tab.0.left" timestamp="1634637028049">
+    <state width="1398" height="196" key="GridCell.Tab.0.left" timestamp="1635751917427">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="123" key="GridCell.Tab.0.left/0.0.1440.900/-280.-1080.1920.1080@0.0.1440.900" timestamp="1634637028049" />
-    <state width="1398" height="276" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1631327863813" />
+    <state width="1398" height="196" key="GridCell.Tab.0.left/0.0.1440.900/-280.-1080.1920.1080@0.0.1440.900" timestamp="1635751917427" />
+    <state width="1398" height="216" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1635581730077" />
     <state width="1398" height="183" key="GridCell.Tab.0.left/0.23.1440.829/-280.-1057.1920.1057@0.23.1440.829" timestamp="1630928571008" />
     <state width="1398" height="229" key="GridCell.Tab.0.left/0.23.1440.835/-280.-1057.1920.1057@0.23.1440.835" timestamp="1633689478036" />
     <state width="1398" height="229" key="GridCell.Tab.0.left/0.23.1440.837/-280.-1057.1920.1057@0.23.1440.837" timestamp="1633685907997" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.838/-280.-1057.1920.1057@0.23.1440.838" timestamp="1632476019083" />
-    <state width="1398" height="123" key="GridCell.Tab.0.right" timestamp="1634637028051">
+    <state width="1398" height="196" key="GridCell.Tab.0.right" timestamp="1635751917429">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="123" key="GridCell.Tab.0.right/0.0.1440.900/-280.-1080.1920.1080@0.0.1440.900" timestamp="1634637028051" />
-    <state width="1398" height="276" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1631327863814" />
+    <state width="1398" height="196" key="GridCell.Tab.0.right/0.0.1440.900/-280.-1080.1920.1080@0.0.1440.900" timestamp="1635751917429" />
+    <state width="1398" height="216" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1635581730079" />
     <state width="1398" height="183" key="GridCell.Tab.0.right/0.23.1440.829/-280.-1057.1920.1057@0.23.1440.829" timestamp="1630928571010" />
     <state width="1398" height="229" key="GridCell.Tab.0.right/0.23.1440.835/-280.-1057.1920.1057@0.23.1440.835" timestamp="1633689478039" />
     <state width="1398" height="229" key="GridCell.Tab.0.right/0.23.1440.837/-280.-1057.1920.1057@0.23.1440.837" timestamp="1633685908036" />
